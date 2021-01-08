@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/sreeharsha.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <!--  Custom CSS style sheet -->
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Resume</title>
+  </head>
+ <!--body content starts here-->
+  <body style="color:rgb(59, 32, 32);
+  font-size: 22px;">
+</br>
+<!--form content starts here-->
+   <form class="container w-75 p-5" method="post" action="resumeForm.php"  >
+    <h1 class="text-center container" id="heading">Resume</h1>
+  </br> </br> 
+     <!------------------------------------row for name------------------------>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <!------------------first name---------------------------->
+          <label for="FirstName">First name :</label>
+          <input
+            type="text"
+            class="form-control"
+            id="FirstName"
+            name="fname"
+            placeholder="First name"
+          />
+        </div>
+        <!--------------------------------Last name--------------------->
+        <div class="form-group col-md-6">
+          <label for="LastName">Last name :</label>
+          <input
+            type="text"
+            class="form-control"
+            id="LastName"
+            name="lname"
+            placeholder="Last name"
+          />
+        </div>
+      </div>
+      <!---------------------------new form  group---------------------------------------------->
+      <!------------------profile input----------------------------->
+      <div class="form-group">
+        <i class="fa fa-briefcase"></i>
+        <label for="designation"> Designation :</label>
+        <input
+          type="text"
+          class="form-control"
+          id="designation"
+          name="designation"
+          placeholder="Designation"
+        />
+      </div>
+      <!-----------------------------new form group--------------------------->
+      <!---------------------address input--------------------->
+      <div class="form-group">
+        <i class="fa fa-address-book" aria-hidden="true"></i> <label for="Address">Address </label>
+        <input
+          type="text"
+          class="form-control"
+          id="Address"
+          name="permanent_address"
+          placeholder="Apartment, studio, or floor"
+        />
+      </div>
+      <!----------------------new form group for contact details---------------------------------->
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="Email"
+            ><i class="fa fa-envelope"> </i> Email address:</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="Email"
+            name="email"
+            placeholder="Email address"
+          />
+        </div>
+        <!--------------------------contact number input---------------------------------->
+        <div class="form-group col-md-6">
+          <label for="ContactNumber"
+            ><i class="fa fa-phone"> </i> Contact number :</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="ContactNumber"
+            name="contactnumber"
+            placeholder="contact number"
+          />
+        </div>
+      </div>
+      <!---------------------------new form group---------------------------->
+    </br>
+       <!--------------------skills dropdown with checkbox-------------------------->
+       <div class="form-row">
+        <div class="form-group col-md-6">
+         <label for="skills">  Skills : </label>
+         <span class="dropdown">
+           <button
+             class="btn btn-primary dropdown-toggle"
+             type="button"
+             id="skills"
+             data-toggle="dropdown"
+             aria-haspopup="true"
+             aria-expanded="false"
+           >
+             skills
+           </button>
+           <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+             <!-----list of skills with the checkbox----->
+             <li>
+               <label class="checkbox"> <input name="skill[]" value="html" type="checkbox" /> Html</label>
+             </li>
+             <hr />
+             <li>
+               <label class="checkbox"> <input name="skill[]" value="css" type="checkbox" /> CSS</label>
+             </li>
+             <hr />
+             <li>
+               <label class="checkbox">
+                 <input type="checkbox"  name="skill[]" value="JavaScript" /> JavaScript</label
+               >
+             </li>
+             <hr />
+             <li>
+               <label class="checkbox">
+                 <input type="checkbox"  name="skill[]" value="bootstrap" /> Bootstrap</label
+               >
+             </li>
+           </div>
+         </span>
+       </div>
+ <!-----------------form group----------------->
+ <!----------languages known dropdown------>
+       <div class="form-group col-md-6">
+         <label for="languages"> Languages known: </label>
+         <span class="dropdown">
+           <button
+             class="btn btn-primary dropdown-toggle"
+             type="button"
+             id="languages"
+            
+             data-toggle="dropdown"
+             aria-haspopup="true"
+             aria-expanded="false"
+           >
+             Languages known
+           </button>
+           <div class="dropdown-menu p-1" aria-labelledby="dropdownMenuButton">
+             <li>
+               <label class="checkbox"> <input name="language[]"  value="english" type="checkbox" /> English</label>
+             </li>
+             <hr />
+             <li>
+               <label class="checkbox"> <input name="language[]" value="hindi" type="checkbox" /> Hindi</label>
+             </li>
+             <hr />
+             <li>
+               <label class="checkbox"> <input name="language[]" value="telugu" type="checkbox" /> Telugu</label>
+             </li>
+           </div>
+         </span>
+       </div>
+      </div>
+
+    </br>
+
+
+<h1><span<i class="fa fa-graduation-cap"></i></span> Qualifications:</h1>
+<div id="main" class="form-row ">
+  <div class="form-group col-md-3 ">
+    <!------------------first name---------------------------->
+    <input
+      type="text"
+      class="form-control"
+      id="education"
+      name="institution[]"
+      placeholder="Institution"
+    />
+  </div>
+  <!--------------------------------Last name--------------------->
+  <div class="form-group col-md-3">
+    <input
+      type="text"
+      class="form-control"
+      name="yearsofstudy[]"
+      id="education1"
+      placeholder="years of study"
+    />
+  </div>
+  <div class="form-group col-md-3">
+   
+    <input
+      type="text"
+      class="form-control"
+      id="education2"
+      name="course[]"
+      placeholder="Course "
+    />
+  </div>
+<div>
+<button id="add" class="btn btn-primary form-group col-md-2">+  </button>
+</div>
+</div>
+
+
+
+<div id="list" class="container col-sm-12">
+  <div class="row">
+    <div class="EducationDetail">
+      <ul class="educationlist"></ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-------------------experience details----------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1><span><i class="fa fa-briefcase"> </i> </span> Experience:</h1>
+<div id="main1" class="form-row ">
+  <div class="form-group col-md-3">
+    <!------------------first name---------------------------->
+    <input
+      type="text"
+      class="form-control"
+      name="organisation[]"
+      id="experience"
+      placeholder="organisation"
+    />
+  </div>
+  <!--------------------------------Last name--------------------->
+  <div class="form-group col-md-3">
+    <input
+      type="text"
+      class="form-control"
+      id="experience1"
+      name="yearsofwork[]"
+      placeholder="years of work"
+    />
+  </div>
+  <div class="form-group col-md-3">
+   
+    <input
+      type="text"
+      class="form-control"
+      name="role_of_work[]"
+      id="experience2"
+      placeholder="Role "
+    />
+  </div>
+<div>
+<button id="add1" class="btn btn-primary col-md-2">+</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-----list of experience details----->
+<div id="list1" class="container col-sm-12">
+  <div class="row">
+    <div class="ExperienceDetail">
+      <ul class="experiencelist"></ul>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</br>
+
+
+<div class="form-group text-center">
+ <button type="submit"  class="btn btn-primary">Submit</button>
+</div>
+
+
+
+    </form>
+    <!--- form ends here-->
+  </br>
+</br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--scripts for bootstrap and font-awesome-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </body>
+
+
+
+
+<script>
+/*assigning constants to id and classes*/
+  const education = document.querySelector( "#education" );
+  const education1 = document.querySelector( "#education1" );
+  const education2 = document.querySelector( "#education2" );
+
+    const add = document.querySelector( "#add" );
+    const Educationlist = document.querySelector( ".educationlist" );
+/*adding the click event listener to the add button */
+
+    add.addEventListener( 'click', addEducationDetail );
+    Educationlist.addEventListener( 'click', remove );
+    /*function for action of the event listener*/
+    function addEducationDetail( event ) {
+        event.preventDefault();
+        /*creting the div and li element and adding class*/
+        const EducationDiv = document.createElement( "ul" );
+        EducationDiv.classList.add( "EducationDetail" );
+        const newEducationDetail = document.createElement( 'li' );
+          /*entering the value in the input in to the new constant and adding class list*/
+          newEducationDetail.innerHTML = "<h3>"+education.value+"</h3>"+"<section>"+education1.value+"</section>"+"<h4>"+education2.value+"</h4>";
+        newEducationDetail.classList.add( "EducationDetaillist" );
+        /*appending child element to the parent elements*/
+        EducationDiv.appendChild( newEducationDetail );
+
+/*  adding the clear button that clears the element on clicking the button*/
+        const clear = document.createElement( "button" );
+        /*entering the button symbol*/
+        clear.innerHTML = "x";
+        clear.classList.add( "complete-btn" );
+        /* appending the child the parent element*/
+        EducationDiv.appendChild( clear );
+        Educationlist.appendChild( EducationDiv );
+        education.value = "";
+        education1.value = "";
+        education2.value = "";
+/*clears the element*/
+    }
+/*removing the list element*/
+    function remove( e ) {
+        const item = e.target;
+        if ( item.classList[ 0 ] === "complete-btn" ) {
+            const EducationDetail = item.parentElement;
+            EducationDetail.remove();
+        }
+    }
+/*End of the education details script*/
+
+
+/*assigning constants to id and classes*/
+
+
+
+
+
+
+      const experience = document.querySelector("#experience");
+      const experience1 = document.querySelector("#experience1");
+      const experience2 = document.querySelector("#experience2");
+      const add1 = document.querySelector("#add1");
+      const Experiencelist = document.querySelector(".experiencelist");
+
+      /*adding the click event listener to the add button */
+
+      add1.addEventListener("click", addExperienceDetail);
+      Experiencelist.addEventListener("click", remove);
+
+      /*function for action of the event listener*/
+
+      function addExperienceDetail(event) {
+        event.preventDefault();
+        /*creating the div and li element and adding class*/
+
+        const ExperienceDiv = document.createElement("ul");
+        ExperienceDiv.classList.add("ExperienceDetail");
+        const newExperienceDetail = document.createElement("li"); 
+        newExperienceDetail.classList.add("ExperienceDetaillist");
+        /*entering the value in the input in to the new constant and adding class list*/
+        newExperienceDetail.innerHTML = "<h3>"+experience.value+"</h3>"+"<section>"+experience1.value+"</section>"+"<h5>"+experience2.value+"</h5>";
+        /*appending child element to the parent elements*/
+
+        ExperienceDiv.appendChild(newExperienceDetail);
+   
+      
+
+        /*  adding the clear button that clears the element on clicking the button*/
+        const clear1 = document.createElement("button");
+        /*entering the button symbol*/
+
+        clear1.innerHTML = "x";
+        clear1.classList.add("complete-btn");
+        /* appending the child the parent element*/
+
+        ExperienceDiv.appendChild(clear1);
+        Experiencelist.appendChild(ExperienceDiv);
+
+        experience.value = "";
+        experience1.value = "";
+        experience2.value = "";
+
+      }
+      /*removing the list element*/
+
+      function remove(e) {
+        const item1 = e.target;
+        if (item1.classList[0] === "complete-btn") {
+          const ExperienceDetail = item1.parentElement;
+          ExperienceDetail.remove();
+        }
+      }
+
+
+
+
+
+
+/*end of the experience details list*/
+</script>
+  <!--body ends here-->
+</html>

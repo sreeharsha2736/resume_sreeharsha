@@ -1,0 +1,95 @@
+/*Resume heading*/
+#heading {
+  text-shadow: 3px 3px 5px yellow;
+  color: rgb(235, 64, 64);
+}
+/*form border*/
+form {
+  border: 3px solid rgb(212, 82, 82);
+  background-color: antiquewhite;
+}
+/*main id of experience and education details*/
+#main,
+#main1 {
+  text-align: center;
+  padding-top: 60px;
+}
+/*the input of education and experience width*/
+
+/*lists of education and experience details*/
+#list,
+#list1 {
+  display: flex;
+  justify-content: center;
+}
+
+.EducationDetail,
+.ExperienceDetail {
+  list-style: none;
+}
+/*experience details list */
+.experiencelist ul {
+  font-size: 20px;
+  display: flex;
+  background-color: white;
+  flex: 1;
+  min-width: 900px;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid rgb(255, 35, 6);
+  color: black;
+}
+section {
+  color: grey;
+}
+.ExperienceDetaillist1 {
+  font-size: 30px;
+}
+/*eduction details list*/
+.educationlist ul {
+  font-size: 20px;
+  display: flex;
+  background-color: white;
+  flex: 1;
+  min-width: 900px;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid rgb(255, 35, 6);
+  color: black;
+}
+/*changing color on hover on lists*/
+li:hover {
+  background-color: gainsboro;
+}
+/*new list of education details*/
+.EducationDetail {
+  margin: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.EducationDetail li {
+  flex: 1;
+}
+/*new list of experience details*/
+.ExperienceDetail {
+  margin: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ExperienceDetail li {
+  flex: 1;
+}
+/*exit button of list and color on hover*/
+.complete-btn {
+  background-color: red;
+}
+
+.complete-btn:hover {
+  color: yellow;
+}
